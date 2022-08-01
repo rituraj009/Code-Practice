@@ -1,0 +1,4 @@
+for i in range(int(input())):
+    r = int(input()); R = set(input().split()) 
+    s = int(input()); S = set(input().split())
+    print(R.issubset(S))
