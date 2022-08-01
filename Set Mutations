@@ -1,0 +1,16 @@
+x = int(input())
+y = set(map(int,input().split()))
+s = int(input())
+for i in range(s):
+    cmd = input().split()
+    opt = cmd[0]
+    s = set(map(int,input().split()))
+    if (opt == 'update'):
+        y |= s
+    elif (opt == 'intersection_update'):
+        y &= s
+    elif (opt == 'difference_update'):
+        y -= s
+    elif (opt == 'symmetric_difference_update'):
+        y ^= s
+print(sum(y))
