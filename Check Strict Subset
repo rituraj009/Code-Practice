@@ -1,0 +1,7 @@
+r = set(input().split())
+c , num = 0, int(input())
+for i in range (num):
+        b = set(input().split())
+        if r.issuperset(b) :
+                c += 1
+print(c == num)
