@@ -1,0 +1,4 @@
+r = int(input())
+r_l = list(map(int, input().split()))
+res= (sum(set(r_l)) * r - sum(r_l)) // (r - 1)
+print(res)
