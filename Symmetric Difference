@@ -1,0 +1,9 @@
+if __name__ == "__main__":
+    m = int(input().strip())
+    m1 = set(map(int, input().strip().split(' ')))
+    
+    n = int(input().strip())
+    n1 = set(map(int, input().strip().split(' ')))
+    k= sorted(m1 ^ n1)
+    for i in k:
+      print(i)
