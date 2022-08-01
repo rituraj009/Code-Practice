@@ -1,0 +1,5 @@
+r = int(input())
+enter = set([])
+for i in range(r):
+    enter.add(input())
+print(len(enter))
