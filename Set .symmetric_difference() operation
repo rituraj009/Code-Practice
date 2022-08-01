@@ -1,0 +1,5 @@
+n = int(input())
+r = set(map(int,input().split()))
+f = int(input())
+s = set(map(int,input().split()))
+print(len(r^s))
